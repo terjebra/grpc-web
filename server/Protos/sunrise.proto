@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "server";
+
+package sunrise;
+
+service Sunrise {
+  rpc GetSunrise (SunriseRequest) returns (SunriseResponse);
+}
+message SunriseRequest {
+    double latitude = 1;
+    double longitude = 2;
+}
+
+message SunriseResponse {
+    string sunsetTimestamp = 1;
+    string sunriseTimestamp = 2;
+}
+  

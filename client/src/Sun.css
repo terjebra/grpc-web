@@ -1,0 +1,54 @@
+.grid {
+    display: grid;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "left info right"
+    "left sundata right"
+    "left other right";
+    grid-column-gap: 15px;
+    grid-row-gap:5px;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+.box {
+    padding: 100px;
+    border: 1px white solid;
+}
+
+.sundata {
+    grid-area: sundata;
+}
+
+
+.info {
+    font-size: 3em;
+    grid-area: info;
+    justify-self: center;
+}
+
+.content {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+} 
+
+
+.title{
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.time {
+    font-size: 2em;
+}
+
+
+.row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap:10px;
+}
